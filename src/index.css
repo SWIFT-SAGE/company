@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1,h2,h3{
+    font-family: "Roboto", sans-serif;
+}
+.char{
+  margin-bottom: 20px;
+}
+.btn-primary{
+    background: transparent;
+    border: 2px solid #1f51ff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f51ff;
+    cursor: pointer;
+    transition: all 0.4s  ease-in;
+
+}
+.btn-primary:hover{
+    background: #1f51ff;
+    color: #fff;
+}
+
+
+
+.logo-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.link{
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 1s ease-in-out;
+}
+.link:hover{
+    border-bottom: 2px solid #1f51ff;
+}
+
+.typing {
+    width: 100ch;
+    animation: typing 10s steps(100) infinite , blink .5s step-end infinite  alternate ;
+    white-space: nowrap;
+    overflow: hidden;
+    height: fit-content;
+    text-align: center;
+    border-right: 3px solid;
+    font-size: 2em;
+  }
+  
+  #canvas{
+    width: 100% !important;
+    min-height: 100vh !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 10% !important;
+
+    z-index: -1;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
